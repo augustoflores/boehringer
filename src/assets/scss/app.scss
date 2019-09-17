@@ -4,10 +4,10 @@
 @import 'template/template';
 p {
   hyphens: none;
+  font-size: 9px;
 }
 .link{
   color: #fff;
-  
 }
 @media all {
 
@@ -43,11 +43,17 @@ p {
 .blue-font{
   color: $secondary-color;
 }
+.blue-titlefont{
+  color: #0066cb;
+}
 .blue-light-font{
   color: #66ccff;
 }
 .yellow-font{
   color: #ffcc33;
+}
+.bold{
+  font-weight: bold;
 }
 .header-bar-font{
   font-size: 10px;
@@ -57,13 +63,17 @@ p {
   color: $secondary-color;
   font-size: 24px
 }
+.saludo2{
+  font-weight: bold;
+  color: $secondary-color;
+  font-size: 20px
+}
 .nota{
   font-size: 12px;
-
 }
 .nombre{
   color: $primary-color;
-  font-size: 20px
+  font-size: 14px
 }
 .float-right{
   float: right;
@@ -72,7 +82,6 @@ p {
   margin: auto !important;
   text-align: center !important;
 }
-
 .t1{
   font-size: 34px;
   font-weight: bold;
@@ -119,12 +128,12 @@ p {
   margin: auto !important;
 }
 .ev3{
-  font-size: 13px;
+  font-size: 11px;
   width: 78%;
   margin: auto !important;
 }
 .ev4{
-  font-size: 12px;
+  font-size: 11px;
   border-left-style:solid;
   border-left-width: 5px;
   border-left-color: #66ccff; 
@@ -195,4 +204,13 @@ p {
 }
 .font13{
   font-size: 13px;
+}
+.borde {
+  padding: 0;
+  margin: 0;
+  border-bottom-color: #a3e0ff;
+  border-bottom-width: 15px;
+}
+.fondo-azulclaro{
+  background-color: #a3e0ff;
 }
