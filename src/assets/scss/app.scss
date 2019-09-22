@@ -281,10 +281,19 @@ h1 {
   border: solid #00a4ed 2px;
 }
 
-@media screen and (max-width: 596px) {
+@media screen and (min-width: 596px) {
   .separa{
-      margin-bottom: 100px!important;
 }
+}
+
+@media screen and (max-width: 596px) {
+    .separa{
+        margin-bottom: 10px!important;
+  }
+  .width-100{
+    width:95%!important;
+    margin: 0 auto;
+  }
 
 }
 
