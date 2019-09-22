@@ -6,6 +6,7 @@
 p {
   hyphens: none;
   font-size: 9px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -175,7 +176,7 @@ h1 {
 }
 
 .ev3 {
-  font-size: 11px;
+  font-size: 12px;
   width: 78%;
   margin: auto;
 }
@@ -211,7 +212,7 @@ h1 {
 }
 
 .evv3 {
-  font-size: 9px;
+  font-size: 12px;
   width: 78%;
   margin: auto;
   hyphens: none;
@@ -278,5 +279,12 @@ h1 {
 
 .hrazul {
   border: solid #00a4ed 2px;
+}
+
+@media screen and (max-width: 596px) {
+  .separa{
+      margin-bottom: 100px!important;
+}
+
 }
 
