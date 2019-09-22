@@ -20,7 +20,7 @@ subject: My Email Templates
             |
           </b>
         </span>
-        <span style="color: darkgoldenrod">
+        <span style="color: darkgoldenrod" class="bold">
           No. 001
         </span>
       </p>
@@ -33,7 +33,7 @@ subject: My Email Templates
             |
           </b>
         </span>
-        <a href="" class="link">
+        <a href="" class="link bold">
 
           BOEHRINGER INGELHEIM MÉXICO
         </a>
@@ -50,35 +50,55 @@ subject: My Email Templates
         "Educación médica al alcance de un click"
       </h1>
 
-      <hr>
+      <hr class="hrazul" style="border: solid #00a4ed 2px;">
     </columns>
   </row>
   <row>
-    <columns>
-      <span class=" noBrinco saludo noBrinco padding">BIENVENIDO: Dr.(a)</span> <span
-        class=" noBrinco nombre">${givenName} ${familyName}</span>
-      <br>
-      <p class="padding" style="font-size: 12px;"><b>¿Listo para informarse sobre los más importantes y más recientes acontecimientos del ámbito
+    <columns large="12">
+      <p class="noBrinco saludo noBrinco padding show-for-large ">
+        BIENVENIDO: Dr.(a)
+         <span
+        class=" noBrinco saludo nombre " style="font-size: 20px; "> ${givenName} ${familyName}</span>
+      </p>
+    </columns>
+  </row>
+  <row>  
+      <columns large="12" class="hide-for-large">
+      <p class="noBrinco saludo noBrinco padding hide-for-large">
+          BIENVENIDO: Dr.(a)<br>
+           <span
+          class=" noBrinco saludo nombre padding" style="font-size: 20px; "> ${givenName} ${familyName}</span>
+        </p>
+      </columns>
+
+    </row>
+    <row>
+      <columns>
+      <p class="padding" style="font-size: 17px;"><b>¿Listo para informarse sobre los más importantes y más recientes
+          acontecimientos del ámbito
           médico?</b> Este boletín le ofrece, con un solo click, acceder a ponencias fundamentales para mantenerse
         actualizado en su especialidad, impartidas directamente por destacados investigadores y profesionales de la
         salud, que le mantendrán al tanto de las novedades más trascendentes del momento. </p>
       <p class="padding saludo2">
         ¡Bienvenido al boletín bimestral de Boehringer Click!
       </p>
+
     </columns>
   </row>
-  <row class="dark-blue-background ">
+  <row class="dark-blue-background " style="border-top: solid #00a4ed 4px;">
     <columns large="2">
+
       <spacer size="10"></spacer>
       <center>
-        <img align="left" src="assets/img/0805_BI_BOLETIN_BIclick_07.png" alt="">
+        <img src="assets/img/0805_BI_BOLETIN_BIclick_07.png" alt="">
       </center>
     </columns>
     <columns large="10">
       <spacer size="10"></spacer>
       <div class="white-font t1 padding">BOEHRINGER INGELHEIM</div>
-      <div class="blue-font t2 noBrinco padding">EVENTOS ONLINE</div>
-      <div class="yellow-font t3 noBrinco padding">Usted puede estar presente en los <b>eventos online</b> desarrollados
+      <div class="blue-font t1 noBrinco padding">EVENTOS ONLINE</div>
+      <div class="yellow-font t3 noBrinco padding" style="font-size:13px;">Usted puede estar presente en los <b>eventos
+          online</b> desarrollados
         y patrocinados por <b>Boehringer Ingelheim y consultarlos posteriormente bajo demanda.</b> </div>
     </columns>
   </row>
@@ -87,7 +107,7 @@ subject: My Email Templates
     <columns class="white-font">
       <br>
       <p class="padding white-font ev1">ICC 2019</p>
-      <p class="padding blue-font ev2">Intercambio Científico Cardiometabólico</p>
+      <p class="padding blue-font ev2" style="font-size: 12px">Intercambio Científico Cardiometabólico</p>
       <p class="padding white-font ev3">En semanas pasadas se llevó a cabo la <b>5a. edición</b> del <b>Intercambio
           Científico Cardiometabólico (ICC),</b> el evento científico más grande de <b>Boehringer Ingelheim.</b> Se
         presentaron las más importantes avances en el manejo de enfermedades cardiovasculares y metabólicas con
@@ -107,7 +127,7 @@ subject: My Email Templates
       <a href="" target="blank"><img class="padding btnleft" src="assets/img/vericc.png" alt=""></a>
 
     </columns>
-    <columns class="no-padding no-margin">
+    <columns class="no-padding no-margin" style="margin: 0; padding-bottom:0">
       <img src="assets/img/0805_BI_BOLETIN_BIclick_11.png" alt="" class="width-100">
     </columns>
   </row>
@@ -121,7 +141,7 @@ subject: My Email Templates
     </columns>
     <columns large="10">
       <spacer size="10"></spacer>
-      <div class="white-font t2 noBrinco padding">DESTACADOS</div>
+      <div class="white-font t1 noBrinco padding" style="font-size: 30px">DESTACADOS</div>
       <div class="yellow-font t3 noBrinco padding">De la mano de expertos, conozca los eventos y cursos más relevantes
         de esta temporada.</div>
     </columns>
@@ -130,7 +150,7 @@ subject: My Email Templates
     <columns class="white-font" large="6">
       <br>
       <p class="padding white-font evv1 noBrinco">Angels Academy 2019</p>
-      <p class="padding blue-light-font evv2">SALVANDO LA VIDA DE MILES DE PACIENTES</p>
+      <p class="padding blue-light-font evv2">SALVANDO LA VIDA DE<br> MILES DE PACIENTES</p>
 
       <p class="padding white-font evv3 noBrinco">
         Durante 2019 se llevó a cabo la <b>3a edición</b> de <b>Angels Academy,</b> que ha sido <b>el evento más exitoso
@@ -147,17 +167,16 @@ subject: My Email Templates
         Los temas incluyeron: <b>atención aguda al paciente con EVC, neuroimagen en EVC,</b> toma de decisión en el
         tratamiento, concepto de ventana extendida y trombectomía.
       </p>
-      <spacer size="10"></spacer>
 
       <p class="padding white-font ev4">
-        Entre las ponencias, destacó la participación del <b class="blue-light-font">Dr. Carlos Molina,</b> director de la unidad de
+        Entre las ponencias, destacó la participación del <b class="blue-light-font">Dr. Carlos Molina,</b> director de
+        la unidad de
         <b>Ictus</b> del <b>Hospital Universitari Vall d' Hebron,</b> quien habló sobre la organización de Redes de
         Ictus en España y cómo establecerlas en cada hospital. </p>
       <br>
       <p class="padding white-font evv3 noBrinco">
         De click y mantengasé al tanto de este evento <b>y más ponencias online.</b>
       </p>
-      <spacer size="20"></spacer>
 
       <a href="" target="blank" class=""><img class="padding btnleft" src="assets/img/verangels.png" alt=""></a>
 
@@ -169,7 +188,7 @@ subject: My Email Templates
   </row>
 
   <row class="blue-background">
-    <columns class="no-padding no-margin" large="6">
+    <columns class="no-padding no-margin" style="padding-bottom: 0;margin-bottom:0" large="6">
       <img src="assets/img/0805_BI_BOLETIN_BIclick_28.png" alt="" class="width-100">
     </columns>
     <columns class="white-font" large="6">
@@ -205,17 +224,19 @@ subject: My Email Templates
     <columns style="padding: 0; margin: 0;">
       <center>
         <br>
-        <span class=" noBrinco saludo centro padding">
+        <span class=" noBrinco saludo centro padding" style="font-size: 36px;">
           Recuerde que en
         </span>
       </center>
       <center>
-        <img src="assets/img/0805_BI_BOLETIN_BIclick_03.jpg" alt="">
+        <img src="assets/img/0805_BI_BOLETIN_BIclick_03.jpg" alt="" style="width: 240px;">
       </center>
-      <p class=" noBrinco nombre padding bold" style="font-size:18px">
-        Puede agendar próximos eventos en vivo dentro de su calendario. No se pierda las ponencias y eventos impartidos
+      <p class=" noBrinco nombre padding bold text-center"
+        style="font-size:18px;padding: 12px 72px 0; text-align: center">
+        Puede agendar próximos eventos en vivo dentro de su calendario. <br>No se pierda las ponencias y eventos
+        impartidos
         por los líderes de opinión más importantes en la práctica médica en México y el mundo.
-      </p><br><br>
+      </p>
       <center class="nombre bold blue-titlefont" style="font-size:18px; color: #009be3">
         Manténgase al tanto de los avances más recientes.
       </center>
@@ -236,7 +257,7 @@ subject: My Email Templates
     </columns>
     <columns large="10">
       <spacer size="10">
-        <div class="white-font t2 noBrinco padding">RECOMENDACIONES</div>
+        <div class="white-font t2 noBrinco padding" style="font-size: 26px">RECOMENDACIONES</div>
         <div class="yellow-font t3 noBrinco padding">Encuentre las mejores sugerencias de contenido para las áreas
           terapéuticas para las cuales <b>Boehringer Ingelheim tiene tratamiento </b>
         </div>
@@ -257,55 +278,57 @@ subject: My Email Templates
         de alto nivel académico y científico en el que se impartieron ponencias y talleres a cargo de expertos
         internacionales y nacionales <b>alrededor del riesgo cardiovascular en diabetes.</b>
       </p>
-      </p><br>
-      <p class="padding white-font ev4">CConozca más de los temas abordados con la participación de doctores acreditados
-        como el <b class="blue-font">Dr. David Fitchett,</b> cardiólogo en el <b>Hospital St. Michael's</b> y profesor de Medicina <b>en
+      <p class="padding white-font ev4">Conozca más de los temas abordados con la participación de doctores acreditados
+        como el <b class="blue-font">Dr. David Fitchett,</b> cardiólogo en el <b>Hospital St. Michael's</b> y profesor
+        de Medicina <b>en
           la Universidad de Toronto</b> quien compartió sus conocimientos sobre la insuficiencia cardiaca y su relación
         con la función renal y la alteración del metabolismo energético yendo más allá de la cardiopatía isquémica.
 
-      </p><br>
-      <p class="padding white-font evv3">No se pierda <b>de está y más ponencias sobre este evento, de click</b> y sea parte de la conversación</b></p><br>
+      </p>
+      <p class="padding white-font evv3">No se pierda <b>de está y más ponencias sobre este evento, de click</b> y sea
+        parte de la conversación</b></p>
       <a href="" target="blank"><img class="btnleft" src="assets/img/0805_BI_BOLETIN_BIclick_39.png" alt=""></a>
 
     </columns>
 
-    <columns class="no-padding no-margin">
+    <columns class="no-padding no-margin" style="padding-bottom: 0;">
       <img src="assets/img/0805_BI_BOLETIN_BIclick_37.png" alt="" class="width-100">
     </columns>
   </row>
 
 
   <row style="fondo-azulclaro">
-      <columns style="background-color: #a3e0ff" class="fondo-azulclaro">
-        <spacer size="10"></spacer>
-      </columns>
-    </row>
+    <columns style="background-color: #a3e0ff" class="fondo-azulclaro">
+      <spacer size="10"></spacer>
+    </columns>
+  </row>
   <row class="dark-blue-background ">
     <columns>
       <spacer size="10"></spacer>
       <br><br>
-      <p class="white-font tt2 noBrinco centro" style="font-size:25px;">¿Conoce a alguien a quien podría interesarle <b>Boehringer
+      <p class="white-font tt2 noBrinco centro" style="font-size:25px;font-weight: light">¿Conoce a alguien a quien
+        podría interesarle <b>Boehringer
           Click?</b><br>
-        <b class="blue-light-font" style="font-size:25px;">Reenvíe este boletín.</b>
+        <b class="blue-light-font" style="font-size:29px; font-weight: bold">Reenvíe este boletín.</b>
         <br><br>
       </p>
     </columns>
   </row>
   <row style="fondo-azulclaro">
-      <columns style="background-color: #a3e0ff" class="fondo-azulclaro">
-        <spacer size="10"></spacer>
-      </columns>
-    </row>
+    <columns style="background-color: #a3e0ff" class="fondo-azulclaro">
+      <spacer size="10"></spacer>
+    </columns>
+  </row>
   <row class="other-blue-background">
     <columns large="6">
       <spacer size="20"></spacer>
       <p class="white-font t3 noBrinco centro">
-        <a class="white-font legales" href="" target="blank">AVISO DE PRIVACIDAD</a> /
-        <a class="white-font legales" href="" target="blank">TÉRMINOS DE USO Y CONDICIONES</a> /
-        <a class="white-font legales" href="" target="blank">CONTACTO</a> /
-        <a href="#" class="white-font legales">DESUSCRIBIR</unsubscribe></b><br>
-          © 2018 Boehringer Ingelheim México. Todos los derechos reservados.</p>
-          <spacer size="20"></spacer>
+        <a class="white-font legales bols" href="" target="blank">AVISO DE PRIVACIDAD</a> /
+        <a class="white-font legales bold" href="" target="blank">TÉRMINOS DE USO Y CONDICIONES</a> /
+        <a class="white-font legales bold" href="" target="blank">CONTACTO</a> /
+        <a href="#" class="white-font legales bold">DESUSCRIBIR</a><br>
+        <span style="font-weight:normal">© 2018 Boehringer Ingelheim México. Todos los derechos reservados.</span></p>
+      <spacer size="20"></spacer>
 
     </columns>
   </row>
@@ -314,13 +337,13 @@ subject: My Email Templates
     <columns>
       <spacer size="10"></spacer>
       <p class="centro nota padding">
-        Le hemos contactado porque se registró en boehringerclick.mx. El correo a través del cual fue dado de alta es:
-        <a class="blue-font underlined" href="mailto:nombre@dominio.com">nombre@dominio.com</a>.
-        Por favor, háganos saber si se quiere <a class="blue-font underlined" href="">desuscribir</a> de esta lista.
-        Configure sus preferencias <a class="blue-font underlined" href="" target="blank">aquí</a>.</p>
+        Le hemos contactado porque se registró en boehringerclick.mx. 
+        Si desea desuscribirse de <br>
+        nuestra lista de correos, <a class="blue-font underlined" href="">haga click aquí</a> </p>
+
       <p class="centro nota padding">
-        Este newsletter es enviado desde una cuenta que usamos para enviar mensajes solamente.
-        Si quiere contactarnos por favor no responda sobre este remitente de correo, para este fin acceda a la sección
+        Este newsletter es enviado desde una cuenta no permite recibir respuestas.<br>
+         Si desea contactarnos por favor acceda a la sección de
         de <a class="blue-font underlined" href="" target="blank">contacto</a>.</p>
       <spacer size="10"></spacer>
     </columns>
